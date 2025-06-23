@@ -9,11 +9,11 @@ A personal portfolio showcasing projects, built with HTML, CSS, and images.
 - Git/GitHub
 
 ## Setup
-1. Clone the repository: `git clone https://github.com/<your-username>/portfolio.git`
-2. Open `index.html` in a browser.
+1. Clone the repository: `git clone https://github.com/<t-blip-dotcom>/portfolio.git`
+2. Open `portfolio.html` in a browser.
 
 ## Deployment
-Hosted on: https://<your-username>.github.io/portfolio/
+Hosted on: https://<t-blip-dotcom>.github.io/portfolio/
 
 ## License
 MIT License
