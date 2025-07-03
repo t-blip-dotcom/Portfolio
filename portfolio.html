@@ -1,53 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="TRACY">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
-    <title>Portfolio</title>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tracy Macharia's personal portfolio showcasing Computer Science projects and skills.">
+  <meta name="keywords" content="Tracy Macharia, portfolio, Computer Science, Python, HTML, CSS">
+  <meta name="author" content="Tracy Macharia">
+  <title>Tracy Macharia - Portfolio</title>
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    window.addEventListener('DOMContentLoaded', function () {
+      const script = document.createElement('script');
+      script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      document.body.appendChild(script);
+    });
+  </script>
 </head>
-<body class="bg-[#F0F6FF] text-black font-[Montserrat]">
-    <nav class="map" aria-label="Main navigation">
-        <div class="language-section p-2">
-            <p class="text-xs text-[#1E3A8A] mb-1">Select language:</p>
-            <div id="google_translate_element" class="w-full"></div>
-        </div>
-        <div class="flex flex-col gap-4">
-            <a href="#about-me" class="nav-link">Starting Point: Personal Info</a>
-            <a href="#skills" class="nav-link">Skills Learnt:Skills</a>
-            <a href="#languages" class="nav-link">Languages learnt:Languages</a>
-            <a href="#projects" class="nav-link">Project Destination: Projects</a>
-            <a href="#contact" class="nav-link">Contact Beacon: Contact</a>
+<body>
+
+
+<button id="toggle-nav" class="hamburger" aria-label="Toggle menu">☰</button>
+
+
+<nav id="side-nav" class="map">
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#personal-info" class="nav-link">Personal Info</a>
+  <a href="#skills" class="nav-link">Skills</a>
+  <a href="#languages" class="nav-link">Languages</a>
+  <a href="#projects" class="nav-link">Projects</a>
+  <a href="#contact" class="nav-link">Contact</a>
+  <div class="language-section">
+    <div id="google_translate_element"></div>
+  </div>
+</nav>
+
+
+<main class="content">
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-4">Hello World 👋, I'm Tracy Macharia</h1>
+      <p class="text-lg text-white">Passionate about building creative tech solutions, learning new things, and occasionally breaking stuff (on purpose 😉).</p>
+      <p class="text-md text-white mt-2 italic">Join me on this coding journey—from clueless to (hopefully) code queen!</p>
+    </div>
+  </section>
+  <section id="personal-info" class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+            <h2 class="text-xl sm:text-2xl font-semibold text-blue-800 mb-4">PERSONAL INFORMATION</h2>
+            <p class="text-gray-700">My name is Tracy Macharia, a student at the University of Nairobi pursuing Computer Science, passionate about technology. I wouldn’t call myself a developer, but I’m *coding* my way through the beginner’s maze! I am very interested in learning new skills and improving my coding abilities. I am currently learning HTML, CSS, TypeScript, and Python. I have a passion for technology and enjoy creating projects that challenge me to think outside the box—still working on the creating projects part, but I’ll get there. Follow along to see whether tech will succeed in finishing me or whether I will succeed in it 😔😭. I am also a fan of memes, and I believe that humor is an essential part of life.</p>
+            <p class="text-gray-700 mt-4">Here is a funny joke to lighten the mood: Why did the computer go to art school? Because it wanted to learn how to draw a better "byte"!</p>
+            <img src="assets/images/image.jpg" alt="Tracy photo" width="200" height="200" class="rounded-full mt-4">
             
-        </div>
-    </nav>
-    <header class="text-center pt-8">
-        <h1 class="text-[#135461] text-5xl font-bold font-['Dancing_Script']">PORTFOLIO</h1>
-    </header>
-    <main class="content grid gap-6 p-6 md:ml-[200px]">
-        <section id="about-me">
-            <h2 class="text-[#148EA6] text-2xl font-['Pacifico']">PERSONAL INFORMATION</h2>
-            <p class="text-sm">
-                My name is Tracy Macharia, a student at the University of Nairobi pursuing Computer Science, passionate about technology. I wouldn’t call myself a developer, but I’m *coding* my way through the beginner’s maze! I am very interested in learning new skills and improving my coding abilities. I am currently learning HTML, CSS, TypeScript, and Python. I have a passion for technology and enjoy creating projects that challenge me to think outside the box—still working on the creating projects part, but I’ll get there. Follow along to see whether tech will succeed in finishing me or whether I will succeed in it 😔😭. I am also a fan of memes, and I believe that humor is an essential part of life.
-            </p>
-            <p class="text-center">
-                Here is a photo of me:
-                <img src="assets/images/image.jpg" alt="My Photo" class="mx-auto my-4 hover:scale-110 transition-transform duration-300" width="200" height="200">
-            </p>
-            <p>
-                Here is a funny joke to lighten the mood before you continue to explore my portfolio:
-                <p class="text-center"><img src="assets/images/joke.png" alt="Funny Joke" width="250" height="200"></p>
-            </p>
+
         </section>
-        <section id="skills">
-            <h2 class="text-[#148EA6] text-2xl font-['Pacifico']">SKILLS</h2>
-            <p>Here are some of the skills I have acquired so far:</p>
-            <ul class="list-disc pl-6">
+
+        <section id="skills" class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+            <h2 class="text-xl sm:text-2xl font-semibold text-blue-800 mb-4">SKILLS</h2>
+            <p class="text-gray-700">Here are some of the skills I have acquired so far:</p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
                 <li>Problem-solving</li>
                 <li>Critical thinking</li>
                 <li>Attention to detail</li>
@@ -57,51 +74,62 @@
                 <li>Communication</li>
                 <li>Basic coding and typing skills</li>
             </ul>
-            <p>I am always eager to learn new skills and improve my existing ones.</p>
+            <p class="text-gray-700 mt-4">I am always eager to learn new skills and improve my existing ones.</p>
+            <a href="#home" class="home-icon" title="Back to Home">
+  ⬆Go to Top
+</a>
 
         </section>
 
-        <section id="languages">
-            <h2 class="text-[#148EA6] text-2xl font-['Pacifico']">LANGUAGES</h2>
-            <p>Here are some of the programming languages I am proficient in:</p>
-            <ol class="list-decimal pl-6">
+        <section id="languages" class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+            <h2 class="text-xl sm:text-2xl font-semibold text-blue-800 mb-4">LANGUAGES</h2>
+            <p class="text-gray-700">Here are some of the programming languages I am proficient in:</p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
                 <li>C++</li>
                 <li>C</li>
-            </ol>
-            <p>These are the programming languages I am currently learning:</p>
-            <ol class="list-decimal pl-6">
+            </ul>
+            <p class="text-gray-700 mt-4">These are the programming languages I am currently learning:</p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>TypeScript</li>
                 <li>Python</li>
-            </ol>
-            <p>To view my projects, please visit my <a href="https://github.com/t-blip-dotcom/Project1.0" target="_blank" class="text-[#148EA6] hover:underline">GitHub Repository</a>.</p>
+            </ul>
+            <p class="text-gray-700 mt-4">To view my projects, please visit my <a href="https://github.com/t-blip-dotcom/Portfolio" class="text-blue-500 hover:underline">GitHub Repository</a>.</p>
+            <a href="#home" class="home-icon" title="Back to Home">
+  ⬆Go to Top
+</a>
+
         </section>
 
-        <section id="projects">
-            <h2 class="text-[#148EA6] text-2xl font-['Pacifico']">PROJECTS</h2>
-            <p>Here are some of the projects I have worked on:</p>
-            <article>
-                <dl>
-                    <dt class="font-bold">Project 1: A To-Do List using Python</dt>
-                    <dd class="pl-4">
-                        This project allowed me to create a basic command-line application that lets users keep track of their tasks and set priorities. Users can set reminders, add tasks, mark tasks as complete, and view tasks.<br>
-                        I mean, we don’t want you to forget your tasks now, do we 😉?
-                    </dd>
-                    <dt class="font-bold">Project 2: A portfolio project</dt>
-                    <dd>This project was a simple website that basically acts as a landing point for anyone interested in learning more about my journey in the tech app as well as my skills.It creates a summary of the projects i have been working and will be working on</dd>
-                </dl>
-            </article>
+        <section id="projects" class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+            <h2 class="text-xl sm:text-2xl font-semibold text-blue-800 mb-4">PROJECTS</h2>
+            <div class="project mb-6">
+                <h3 class="text-lg font-semibold text-gray-800">Project 1: A To-Do List using Python</h3>
+                <p class="text-gray-700">This project allowed me to create a basic command-line application that lets users keep track of their tasks and set priorities. Users can set reminders, add tasks, mark tasks as complete, and view tasks.</p>
+                <p class="text-gray-700">I mean, we don’t want you to forget your tasks now, do we 😉?</p>
+                <p class="text-gray-700"><strong>Technologies:</strong> Python</p>
+                <a href="https://github.com/t-blip-dotcom/Portfolio" brokerage="text-blue-500 hover:underline">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3 class="text-lg font-semibold text-gray-800">Project 2: A Portfolio Project</h3>
+                <p class="text-gray-700">This project is a simple website that acts as a landing point for anyone interested in learning more about my journey in tech as well as my skills. It creates a summary of the projects I have been working on and will be working on.</p>
+                <p class="text-gray-700"><strong>Technologies:</strong> HTML, CSS, Tailwind</p>
+                <a href="https://t-blip-dotcom.github.io/Portfolio/portfolio.html" class="text-blue-500 hover:underline">View Live</a>
+            </div>
+            <a href="#home" class="home-icon" title="Back to Home">
+  ⬆Go to Top
+</a>
+
         </section>
 
-        <section id="contact">
-            <h2 class="text-[#148EA6] text-2xl font-['Pacifico']">CONTACT INFORMATION</h2>
-            <p>
-                If you would like to get in touch, please reach out via email:
-                <a href="mailto:machariatracy@students.uonbi.ac.ke" target="_blank" class="text-[#148EA6] hover:underline">Send me an email</a>.<br>
-                Or you can find me on <a href="https://www.instagram.com/_.m.ach.aria._/" target="_blank" class="text-[#148EA6] hover:underline">Instagram</a>.
-            </p>
-            <form class="mt-6 space-y-4 max-w-md mx-auto">
+  <section id="contact" class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+    <h2 class="text-xl sm:text-2xl font-semibold text-blue-800 mb-4">CONTACT INFORMATION</h2>
+    <p class="text-lg text-gray-700 mb-4">Interested in collaborating or have questions? Reach out!</p>
+    <p class="text-gray-700">Email: <a href="mailto:machariatracy@students.uonbi.ac.ke" class="text-blue-500 hover:underline">Send me an email</a>.</p>
+    <p class="text-gray-700 mt-2">Or find me on <a href="https://www.instagram.com/_.m.ach.aria._/" class="text-blue-500 hover:underline">Instagram</a>.</p>
+
+    <form class="mt-6 space-y-4 max-w-md mx-auto">
                 <div>
                     <label for="name" class="block text-sm font-medium">Name</label>
                     <input type="text" id="name" name="name" required class="w-full p-2 border border-[#148EA6] rounded-md focus:ring-2 focus:ring-[#FF6B6B] focus:outline-none">
@@ -125,17 +153,24 @@
                 <button type="submit" class="w-full p-2 bg-[#FF6B6B] text-white rounded-md hover:bg-[#E55A5A] transition-colors">Send Message</button>
             </form>
         </section>
-    </main>
-    <footer class="text-center p-4 bg-[#6D8299] text-black font-['Pacifico']">
-        <p>© 2025 Tracy Macharia. All rights reserved.</p>
-    </footer>
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
+</main>
+
+
+<a href="#home" class="home-icon" title="Back to Home">⬆Go to Top</a>
+
+
+<footer class="text-center py-4 text-gray-600">
+  © 2025 Tracy Macharia. All rights reserved.
+</footer>
+
+<script>
+  const toggleButton = document.getElementById('toggle-nav');
+  const nav = document.getElementById('side-nav');
+  toggleButton.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
+
